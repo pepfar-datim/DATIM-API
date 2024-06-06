@@ -113,7 +113,7 @@ api_get <- function(path,
                     handle = handle,
                     httr::add_headers(Authorization =
                                         paste("Bearer",
-                                              d2_session$token$credentials$access_token, sep = " ")))
+                                              bearer_token, sep = " ")))
         }
 
       )
