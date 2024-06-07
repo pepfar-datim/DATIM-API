@@ -103,10 +103,10 @@ api_get <- function(path,
           #TODO: Remove the structure of the token, as we do not care about it
           #First, the structure of the DHIS2 OAUTH2 token
           if (names(token) == "credentials") {
-            bearer_token <- token$credentials$access_token
+            bearer_token <- d2_session$token$credentials$access_token
           } else {
             #Second, the structure of the Okta OAUTH2 token
-            bearer_token <- token$id_token
+            bearer_token <- d2_session$token$id_token
           }
           httr::GET(url,
                     httr::timeout(timeout),
