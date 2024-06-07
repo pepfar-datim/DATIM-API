@@ -102,7 +102,7 @@ api_get <- function(path,
           #Determine which type of token we are using
           #TODO: Remove the structure of the token, as we do not care about it
           #First, the structure of the DHIS2 OAUTH2 token
-          if (names(token) == "credentials") {
+          if (names(d2_session$token) == "credentials") {
             bearer_token <- d2_session$token$credentials$access_token
           } else {
             #Second, the structure of the Okta OAUTH2 token
