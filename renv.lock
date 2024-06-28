@@ -1282,16 +1282,17 @@
       "Repository": "CRAN",
       "Hash": "34c16f1ef796057bfa06d3f4ff818a5d"
     },
-    "systemfonts": {
+     "systemfonts": {
       "Package": "systemfonts",
-      "Version": "1.0.4",
+      "Version": "1.1.0",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
         "R",
-        "cpp11"
+        "cpp11",
+        "lifecycle"
       ],
-      "Hash": "90b28393209827327de889f49935140a"
+      "Hash": "213b6b8ed5afbf934843e6c3b090d418"
     },
     "testthat": {
       "Package": "testthat",
