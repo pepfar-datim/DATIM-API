@@ -448,7 +448,7 @@
     },
     "gert": {
       "Package": "gert",
-      "Version": "1.9.2",
+      "Version": "2.0.1",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
@@ -458,8 +458,7 @@
         "rstudioapi",
         "sys",
         "zip"
-      ],
-      "Hash": "9122b3958e749badb5c939f498038b57"
+      ]
     },
     "gh": {
       "Package": "gh",
