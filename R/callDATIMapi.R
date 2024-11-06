@@ -13,7 +13,7 @@
 #'
 api_get <- function(path,
                     d2_session,
-                    retry = 1, timeout = 60,
+                    retry = 1, timeout = 240,
                     api_version = NULL,
                     verbose = FALSE,
                     quiet = TRUE) {
