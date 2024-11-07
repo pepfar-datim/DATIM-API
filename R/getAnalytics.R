@@ -33,7 +33,7 @@ getAnalytics <-  function(...,
                           return_names = FALSE,
                           d2_session = dynGet("d2_default_session", inherits = TRUE),
                           retry = 1,
-                          timeout = 180,
+                          timeout = 360,
                           verbose = FALSE,
                           quiet = TRUE) {
 

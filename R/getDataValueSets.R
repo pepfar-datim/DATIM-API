@@ -18,7 +18,7 @@ getDataValueSets <- function(variable_keys = NULL, #keys,
                              variable_values = NULL, #values,
                              d2_session = dynGet("d2_default_session",
                                                  inherits = TRUE),
-                             retry = 1, timeout = 180,
+                             retry = 1, timeout = 360,
                              verbose = FALSE,
                              quiet = TRUE) {
 
