@@ -115,7 +115,7 @@ getAnalytics <-  function(...,
   #change data types to numeric where possible
   resp[, coercions == "NUMBER"] <- sapply(resp[, coercions == "NUMBER"], as.numeric)
   if (verbose) {
-    return(list("data" = resp, "api_responses" = meta_data))
+    return(list("data" = resp, "api_responses" = meta_data, "api_call" = path))
   } else {
     return(resp)
   }
