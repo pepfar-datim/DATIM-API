@@ -34,7 +34,7 @@ library(magrittr)
 ```
 
 ```{r, include = FALSE}
-httptest::start_vignette("play.dhis2.org")
+httptest::start_vignette("Introduction-to-datimutils")
 ```
 
 ## Logging into DATIM
@@ -49,9 +49,9 @@ By default the `loginToDATIM` and `loginToDATIMOAuth` function will create an R 
 
 The most basic method is for the user to pass their respective username and password directly into the `loginToDATIM` function, along with the web address of the server the user wishes to log in to.
 
-```{r eval = F}
+```{r eval = T}
 loginToDATIM(
-  base_url = "play.dhis2.org/2.36/",
+  base_url = "https://play.im.dhis2.org/dev/",
   username = "admin",
   password = "district"
 )
@@ -70,7 +70,7 @@ The first option entails the user entering the following: baseurl, username, and
 ```{js eval = F}
 {
   "dhis": {
-    "baseurl": "play.dhis2.org/2.36/",
+    "baseurl": "play.im.dhis2.org/dev/",
     "username": "admin",
     "password": "district"
   }
@@ -82,7 +82,7 @@ Alternatively, the the entry for password can be blank such that the file resemb
 ```{js eval = F}
 {
   "dhis": {
-    "baseurl": "play.dhis2.org/2.36/",
+    "baseurl": "play.im.dhis2.org/dev/",
     "username": "admin",
     "password": ""
   }
@@ -95,10 +95,6 @@ The function will look in the users keyring/credential store for the aforementio
 
 In both methods, call the `loginToDATIM` function as so: \> Note: replace `play.json` with the path of your config file
 
-```{r}
-# logging in generates a cookie so the other functions can be used freely without credentials
-loginToDATIM(config_path = "play.json")
-```
 
 ### Method 4 - OAuth
 
@@ -186,15 +182,16 @@ dplyr::mutate(data,
 As you can see returning multiple, properly ordered rows for ANC 1st visit is critical for inserting the new metadata in the data frame. If a user called the DHIS2 api directly like this they would only get one result for each unique uid. `Datimutils` takes care of ensuring the output order matches the input vector order when using the high level metadata helpers.
 
 ```{r}
-url <- paste0("https://play.dhis2.org/2.35/api/dataElements.csv?",
+url <- paste0("https://play.im.dhis2.org/dev/api/organisationUnits.json?paging=false&filter=id:in:[kJq2mPyFEHo,Vth0fbpFcsO]&fields=id,nameapi/dataElements.json?",
 "filter=id:in:[fbfJHSPpUQD,cYeuwXTCPkU,fbfJHSPpUQD]",
 "&fields=name")
 
 httr::GET(url,
           httr::authenticate("admin",
                              "district")) %>%
-  httr::content() %>%
-  readr::read_csv() %>%
+  httr::content(as = "text") %>%
+  jsonlite::fromJSON(simplifyDataFrame = TRUE,  
+                     flatten = TRUE) %>%
   print()
 ```
 
@@ -271,7 +268,7 @@ Though the return of these commands includes list columns which may require furt
         {
             "lastUpdated": "2014-11-25T09:37:53.212",
             "id": "vWbkYPRmKyS",
-            "href": "https://play.dhis2.org/2.35.7/api/organisationUnits/vWbkYPRmKyS",
+            "href": "https://play.im.dhis2.org/dev/api/organisationUnits/vWbkYPRmKyS",
             "level": 3,
             "created": "2012-02-17T15:54:39.987",
             "name": "Baoma",
@@ -435,16 +432,16 @@ tabl <- "
 | !eq           | %.~eq%          | Inequality                                      |
 | like          | %.Like%         | Case sensitive string, match anywhere           |
 | !like         | %.~Like%        | Case sensitive string, not match anywhere       |
-| \\$like       | %.^Like%       | Case sensitive string, match start             |
-| !\\$like      | %.~^Like%      | Case sensitive string, not match start         |
-| like\\$       | %.Like$%       | Case sensitive string, match end               |
-| !like\\$      | %.~Like$%      | Case sensitive string, not match end           |
+| \\$like       | %.^Like%        | Case sensitive string, match start              |
+| !\\$like      | %.~^Like%       | Case sensitive string, not match start          |
+| like\\$       | %.Like\\$%        | Case sensitive string, match end                |
+| !like\\$      | %.~Like\\$%       | Case sensitive string, not match end            |
 | ilike         | %.like%         | Case insensitive string, match anywhere         |
 | !ilike        | %.~like%        | Case insensitive string, not match anywhere     |
-| \\$ilike      | %.^like%       | Case insensitive string, match start           |
-| !\\$ilike     | %.~^like%      | Case insensitive string, not match start       |
-| ilike\\$      | %.like$%       | Case insensitive string, match end             |
-| !ilike\\$     | %.~like$%      | Case insensitive string, not match end         |
+| \\$ilike      | %.^like%        | Case insensitive string, match start            |
+| !\\$ilike     | %.~^like%       | Case insensitive string, not match start        |
+| ilike\\$      | %.like\\$%        | Case insensitive string, match end              |
+| !ilike\\$     | %.~like\\$%       | Case insensitive string, not match end          |
 | gt            | %.gt%           | Greater than                                    |
 | ge            | %.ge%           | Greater than or equal                           |
 | lt            | %.lt%           | Less than                                       |
@@ -496,7 +493,6 @@ datimutils::getAnalytics(dx = "Uvn6LCg7dVU",
                          return_names = TRUE)
 
 ```
-
 ```{r, include = FALSE}
 httptest::end_vignette()
 ```

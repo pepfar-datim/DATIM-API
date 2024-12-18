@@ -27,56 +27,56 @@
     ],
     "metaData": {
         "items": {
+            "202408": {
+                "name": "Agosto 2024"
+            },
             "ou": {
                 "name": "Organisation unit"
+            },
+            "202409": {
+                "name": "Setembro 2024"
+            },
+            "202406": {
+                "name": "Junho 2024"
+            },
+            "202407": {
+                "name": "Julho 2024"
             },
             "O6uvpzGd5pu": {
                 "name": "Bo"
             },
-            "202107": {
-                "name": "July 2021"
+            "202404": {
+                "name": "Abril 2024"
             },
-            "202009": {
-                "name": "September 2020"
+            "202405": {
+                "name": "Maio 2024"
             },
-            "202108": {
-                "name": "August 2021"
+            "202402": {
+                "name": "Fevereiro 2024"
             },
-            "202105": {
-                "name": "May 2021"
+            "202403": {
+                "name": "Março 2024"
             },
-            "202106": {
-                "name": "June 2021"
+            "202312": {
+                "name": "Dezembro 2023"
             },
-            "202103": {
-                "name": "March 2021"
+            "202411": {
+                "name": "Novembro 2024"
             },
-            "202104": {
-                "name": "April 2021"
+            "202401": {
+                "name": "Janeiro 2024"
             },
             "LAST_12_MONTHS": {
-                "name": "Last 12 months"
+                "name": "Últimos doze meses"
             },
             "fdc6uOvgoji": {
                 "name": "Bombali"
             },
-            "202101": {
-                "name": "January 2021"
-            },
-            "202102": {
-                "name": "February 2021"
-            },
-            "202011": {
-                "name": "November 2020"
-            },
-            "202012": {
-                "name": "December 2020"
+            "202410": {
+                "name": "Outubro 2024"
             },
             "dx": {
                 "name": "Data"
-            },
-            "202010": {
-                "name": "October 2020"
             },
             "pe": {
                 "name": "Period"
@@ -90,18 +90,18 @@
                 "Uvn6LCg7dVU"
             ],
             "pe": [
-                "202009",
-                "202010",
-                "202011",
-                "202012",
-                "202101",
-                "202102",
-                "202103",
-                "202104",
-                "202105",
-                "202106",
-                "202107",
-                "202108"
+                "202312",
+                "202401",
+                "202402",
+                "202403",
+                "202404",
+                "202405",
+                "202406",
+                "202407",
+                "202408",
+                "202409",
+                "202410",
+                "202411"
             ],
             "ou": [
                 "O6uvpzGd5pu",
@@ -112,69 +112,72 @@
             ]
         }
     },
+    "rowContext": {
+
+    },
+    "width": 3,
     "rows": [
         [
             "ANC 1 Coverage",
-            "September 2020",
-            "127.0"
+            "Dezembro 2023",
+            "97.48"
         ],
         [
             "ANC 1 Coverage",
-            "October 2020",
+            "Janeiro 2024",
+            "108.06"
+        ],
+        [
+            "ANC 1 Coverage",
+            "Fevereiro 2024",
+            "110.15"
+        ],
+        [
+            "ANC 1 Coverage",
+            "Março 2024",
+            "102.89"
+        ],
+        [
+            "ANC 1 Coverage",
+            "Abril 2024",
             "114.0"
         ],
         [
             "ANC 1 Coverage",
-            "November 2020",
-            "102.4"
+            "Maio 2024",
+            "138.48"
         ],
         [
             "ANC 1 Coverage",
-            "December 2020",
-            "96.9"
+            "Junho 2024",
+            "122.94"
         ],
         [
             "ANC 1 Coverage",
-            "January 2021",
-            "110.2"
+            "Julho 2024",
+            "133.23"
         ],
         [
             "ANC 1 Coverage",
-            "February 2021",
-            "116.4"
+            "Agosto 2024",
+            "119.86"
         ],
         [
             "ANC 1 Coverage",
-            "March 2021",
-            "105.0"
+            "Setembro 2024",
+            "127.4"
         ],
         [
             "ANC 1 Coverage",
-            "April 2021",
-            "116.3"
+            "Outubro 2024",
+            "78.19"
         ],
         [
             "ANC 1 Coverage",
-            "May 2021",
-            "141.3"
-        ],
-        [
-            "ANC 1 Coverage",
-            "June 2021",
-            "125.4"
-        ],
-        [
-            "ANC 1 Coverage",
-            "July 2021",
-            "135.9"
-        ],
-        [
-            "ANC 1 Coverage",
-            "August 2021",
-            "122.3"
+            "Novembro 2024",
+            "115.79"
         ]
     ],
     "height": 12,
-    "width": 3,
     "headerWidth": 3
 }
