@@ -95,6 +95,10 @@ The function will look in the users keyring/credential store for the aforementio
 
 In both methods, call the `loginToDATIM` function as so: \> Note: replace `play.json` with the path of your config file
 
+```{r eval = F}
+# logging in generates a cookie so the other functions can be used freely without credentials
+loginToDATIM(config_path = "play.json")
+```
 
 ### Method 4 - OAuth
 
@@ -182,7 +186,7 @@ dplyr::mutate(data,
 As you can see returning multiple, properly ordered rows for ANC 1st visit is critical for inserting the new metadata in the data frame. If a user called the DHIS2 api directly like this they would only get one result for each unique uid. `Datimutils` takes care of ensuring the output order matches the input vector order when using the high level metadata helpers.
 
 ```{r}
-url <- paste0("https://play.im.dhis2.org/dev/api/organisationUnits.json?paging=false&filter=id:in:[kJq2mPyFEHo,Vth0fbpFcsO]&fields=id,nameapi/dataElements.json?",
+url <- paste0("https://play.im.dhis2.org/dev/api/dataElements.json?",
 "filter=id:in:[fbfJHSPpUQD,cYeuwXTCPkU,fbfJHSPpUQD]",
 "&fields=name")
 

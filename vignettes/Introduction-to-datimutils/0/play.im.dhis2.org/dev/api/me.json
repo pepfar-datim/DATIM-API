@@ -8,7 +8,7 @@
     "gender": "gender_male",
     "jobTitle": "Super user",
     "created": "2013-04-18T17:15:08.407",
-    "lastUpdated": "2024-12-18T10:35:17.665",
+    "lastUpdated": "2024-12-18T12:03:35.128",
     "dataViewOrganisationUnits": [
 
     ],
@@ -140,8 +140,8 @@
         }
     ],
     "settings": {
-        "keyDbLocale": "pt",
         "keyMessageSmsNotification": false,
+        "keyDbLocale": "pt",
         "keyTrackerDashboardLayout": "{\"IpHINAT79UW\":{\"widgets\":[{\"title\":\"enrollment\",\"view\":\"components/enrollment/enrollment.html\",\"show\":true,\"expand\":true,\"parent\":\"biggerWidget\",\"order\":0},{\"title\":\"indicators\",\"view\":\"components/rulebound/rulebound.html\",\"show\":true,\"expand\":true,\"parent\":\"biggerWidget\",\"order\":1},{\"title\":\"dataentry\",\"view\":\"components/dataentry/dataentry.html\",\"show\":true,\"expand\":true,\"parent\":\"biggerWidget\",\"order\":2},{\"title\":\"report\",\"view\":\"components/report/tei-report.html\",\"show\":false,\"expand\":true,\"parent\":\"biggerWidget\",\"order\":3},{\"title\":\"current_selections\",\"view\":\"components/selected/selected.html\",\"show\":false,\"expand\":true,\"parent\":\"smallerWidget\",\"order\":0},{\"title\":\"feedback\",\"view\":\"components/rulebound/rulebound.html\",\"show\":false,\"expand\":true,\"parent\":\"smallerWidget\",\"order\":1},{\"title\":\"profile\",\"view\":\"components/profile/profile.html\",\"show\":true,\"expand\":true,\"parent\":\"smallerWidget\",\"order\":2},{\"title\":\"relationships\",\"view\":\"components/relationship/relationship.html\",\"show\":true,\"expand\":true,\"parent\":\"smallerWidget\",\"order\":4},{\"title\":\"notes\",\"view\":\"components/notes/notes.html\",\"show\":true,\"expand\":true,\"parent\":\"smallerWidget\",\"order\":5},{\"title\":\"messaging\",\"view\":\"components/messaging/messaging.html\",\"show\":true,\"expand\":true,\"parent\":\"smallerWidget\",\"order\":5},{\"title\":\"dataentryTabular\",\"view\":\"components/dataentry/dataentry-tabular-layout.html\",\"show\":false,\"expand\":true,\"parent\":\"biggerWidget\",\"order\":3}],\"program\":\"IpHINAT79UW\"},\"ur1Edk5Oe2n\":{\"widgets\":[{\"title\":\"enrollment\",\"view\":\"components/enrollment/enrollment.html\",\"show\":true,\"expand\":true,\"parent\":\"biggerWidget\",\"order\":0},{\"title\":\"indicators\",\"view\":\"components/rulebound/rulebound.html\",\"show\":true,\"expand\":true,\"parent\":\"biggerWidget\",\"order\":1},{\"title\":\"dataentry\",\"view\":\"components/dataentry/dataentry.html\",\"show\":false,\"expand\":true,\"parent\":\"biggerWidget\",\"order\":2},{\"title\":\"report\",\"view\":\"components/report/tei-report.html\",\"show\":true,\"expand\":true,\"parent\":\"biggerWidget\",\"order\":3},{\"title\":\"current_selections\",\"view\":\"components/selected/selected.html\",\"show\":false,\"expand\":true,\"parent\":\"smallerWidget\",\"order\":0},{\"title\":\"feedback\",\"view\":\"components/rulebound/rulebound.html\",\"show\":true,\"expand\":true,\"parent\":\"smallerWidget\",\"order\":1},{\"title\":\"profile\",\"view\":\"components/profile/profile.html\",\"show\":true,\"expand\":true,\"parent\":\"smallerWidget\",\"order\":2},{\"title\":\"relationships\",\"view\":\"components/relationship/relationship.html\",\"show\":true,\"expand\":true,\"parent\":\"smallerWidget\",\"order\":3},{\"title\":\"notes\",\"view\":\"components/notes/notes.html\",\"show\":true,\"expand\":true,\"parent\":\"smallerWidget\",\"order\":4},{\"title\":\"messaging\",\"view\":\"components/messaging/messaging.html\",\"show\":true,\"expand\":true,\"parent\":\"smallerWidget\",\"order\":5},{\"title\":\"dataentryTabular\",\"view\":\"components/dataentry/dataentry-tabular-layout.html\",\"show\":true,\"expand\":true,\"parent\":\"biggerWidget\",\"order\":3}],\"program\":\"ur1Edk5Oe2n\"}}",
         "keyCurrentStyle": "light_blue/light_blue.css",
         "keyStyle": "light_blue/light_blue.css",
@@ -166,6 +166,20 @@
         "WSGAb5XwJ3Y"
     ],
     "authorities": [
+        "F_DATASET_PRIVATE_ADD",
+        "F_EVENTCHART_EXTERNAL",
+        "F_INDICATOR_DELETE",
+        "F_SCHEDULING_ADMIN",
+        "F_DATAELEMENTGROUP_DELETE",
+        "F_VALIDATIONRULEGROUP_PUBLIC_ADD",
+        "M_dhis-web-interpretation",
+        "F_RELATIONSHIP_MANAGEMENT",
+        "F_OPTIONSET_PRIVATE_ADD",
+        "F_USER_ADD",
+        "F_IMPORT_DATA",
+        "F_TRACKED_ENTITY_COMMENT_DELETE",
+        "F_DOCUMENT_DELETE",
+        "M_dhis-web-maintenance-user",
         "M_dhis-web-maintenance",
         "F_PREDICTOR_DELETE",
         "F_INDICATORGROUPSET_PRIVATE_ADD",
@@ -400,21 +414,7 @@
         "F_USER_DELETE_WITHIN_MANAGED_GROUP",
         "M_dhis-web-settings",
         "F_APPROVE_DATA",
-        "F_TRACKED_ENTITY_ATTRIBUTE_PRIVATE_ADD",
-        "F_DATASET_PRIVATE_ADD",
-        "F_EVENTCHART_EXTERNAL",
-        "F_INDICATOR_DELETE",
-        "F_SCHEDULING_ADMIN",
-        "F_DATAELEMENTGROUP_DELETE",
-        "F_VALIDATIONRULEGROUP_PUBLIC_ADD",
-        "M_dhis-web-interpretation",
-        "F_RELATIONSHIP_MANAGEMENT",
-        "F_OPTIONSET_PRIVATE_ADD",
-        "F_USER_ADD",
-        "F_IMPORT_DATA",
-        "F_TRACKED_ENTITY_COMMENT_DELETE",
-        "F_DOCUMENT_DELETE",
-        "M_dhis-web-maintenance-user"
+        "F_TRACKED_ENTITY_ATTRIBUTE_PRIVATE_ADD"
     ],
     "dataSets": [
         "Nyh6laLdBEJ",
